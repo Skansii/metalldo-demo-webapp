@@ -20,7 +20,7 @@ jobs:
           username: ${{ secrets.f016fcd5 }}
           password: ${{ secrets.Ym2kLqfjxoy9EBjt256t }}
           local-dir: ./
-          server-dir: ${{ secrets./ }}
+          server-dir: ${{ secrets./html }}
           method: ftp
 
 
