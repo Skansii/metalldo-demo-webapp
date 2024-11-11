@@ -21,7 +21,7 @@ jobs:
           password: ${{ secrets.Ym2kLqfjxoy9EBjt256t }}
           local-dir: ./
           server-dir: ${{ secrets.html }}
-          method: ftp
+          protocol: ftp
 
 
 
