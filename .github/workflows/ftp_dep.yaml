@@ -1,0 +1,24 @@
+name: FTP Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@4.3.2
+        with:
+          server: ${{ w01dc97f.kasserver.com }}
+          username: ${{ f016fcd5 }}
+          password: ${{ Ym2kLqfjxoy9EBjt256t }}
+          local-dir: ./
+          server-dir: ${{ ./ }}
+          method: ftp
