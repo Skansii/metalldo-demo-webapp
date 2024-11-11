@@ -16,9 +16,12 @@ jobs:
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
-          server: ${{ w01dc97f.kasserver.com }}
-          username: ${{ f016fcd5 }}
-          password: ${{ Ym2kLqfjxoy9EBjt256t }}
+          server: ${{ secrets.w01dc97f.kasserver.com }}
+          username: ${{ secrets.f016fcd5 }}
+          password: ${{ secrets.Ym2kLqfjxoy9EBjt256t }}
           local-dir: ./
-          server-dir: ${{ ./ }}
+          server-dir: ${{ secrets./ }}
           method: ftp
+
+
+
