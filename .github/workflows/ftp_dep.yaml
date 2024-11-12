@@ -20,7 +20,7 @@ jobs:
           username: f016fcd5
           password: Ym2kLqfjxoy9EBjt256t
           local-dir: ./
-          server-dir: html/
+          server-dir: /
           protocol: ftp
 
 
